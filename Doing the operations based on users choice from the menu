@@ -1,0 +1,36 @@
+def sq():
+    s=int(input("Enter the side:"))
+    print("Area of square:",s*s)
+def rect(l,b):
+    print("Area of rectange:",l*b)
+def circ():
+    r=int(input("Enter the radius:"))
+    return 3.14*r*r
+def tri(b,h):
+     return 0.5*b*h
+
+while True:
+    print("1.square")
+    print("2.rectange")
+    print("3.circle")
+    print("4.triangle")
+    print("5.exit")
+    c=int(input("Enter your choice:"))
+    if c==1:
+        sq()
+    elif c==2:
+        l=int(input("Enter the length:"))
+        b=int(input("Enter the breath:"))
+        rect(l,b)
+    elif c==3:
+        x=circ()
+        print("Area of circle:",x)
+    elif c==4:
+        b=int(input("Enter the breath:"))
+        h=int(input("Enter the height:"))
+        y=tri(b,h)
+        print("Area of Triangle:",y)
+    else:
+        print("THANK YOU COME AGAIN")
+        break
+        
