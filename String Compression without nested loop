@@ -1,0 +1,11 @@
+s="ABBCCCDDDDA"
+a=""
+c=1
+for i in range(len(s)):
+    if i+1<len(s) and s[i]==s[i+1]:
+        c+=1
+    else:
+        a=a+s[i]
+        a=a+str(c)
+        c=1
+print(a)
